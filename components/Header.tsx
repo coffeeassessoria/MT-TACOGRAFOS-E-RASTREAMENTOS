@@ -37,6 +37,38 @@ export const Header: React.FC = () => {
     };
   }, [isOpen]);
 
+  const sidebarVariants = {
+    open: {
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+        staggerChildren: 0.1,
+        delayChildren: 0.1
+      }
+    },
+    closed: {
+      x: "100%",
+      transition: {
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+        staggerChildren: 0.05,
+        staggerDirection: -1
+      }
+    }
+  };
+
+  const itemVariants = {
+    open: {
+      opacity: 1,
+      x: 0,
+      transition: { type: "spring", stiffness: 300, damping: 24 }
+    },
+    closed: { opacity: 0, x: 20 }
+  };
+
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -52,7 +84,6 @@ export const Header: React.FC = () => {
               alt="Logo MT Rastreamentos" 
               className="h-14 w-auto object-contain mix-blend-screen group-hover:scale-105 transition-transform duration-300" 
             />
-            {/* Texto removido pois a logo já contém o nome, mantendo apenas se necessário para acessibilidade ou SEO, mas visualmente a logo basta */}
           </a>
 
           {/* Desktop Nav */}
@@ -98,10 +129,10 @@ export const Header: React.FC = () => {
 
             {/* Sliding Drawer */}
             <motion.div 
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={sidebarVariants}
               className="fixed top-0 right-0 h-full w-[85%] max-w-xs bg-brand-card border-l border-white/10 shadow-2xl z-[70] md:hidden flex flex-col"
             >
               <div className="flex flex-col h-full p-6">
@@ -120,26 +151,30 @@ export const Header: React.FC = () => {
                 {/* Links */}
                 <div className="flex flex-col gap-2">
                   {navItems.map((item) => (
-                    <a 
+                    <motion.a 
                       key={item.label} 
                       href={item.href}
                       onClick={() => setIsOpen(false)}
+                      variants={itemVariants}
                       className="text-lg font-medium text-brand-text hover:text-brand-orange hover:bg-white/5 px-4 py-3 rounded-lg transition-all"
                     >
                       {item.label}
-                    </a>
+                    </motion.a>
                   ))}
                 </div>
 
                 {/* Drawer Footer */}
-                <div className="mt-auto pt-6 border-t border-white/10">
+                <motion.div 
+                  variants={itemVariants}
+                  className="mt-auto pt-6 border-t border-white/10"
+                >
                   <Button href="#contato" onClick={() => setIsOpen(false)} className="w-full justify-center">
                     Falar com Especialista
                   </Button>
                   <p className="text-center text-xs text-gray-500 mt-4">
                     Grupo MT - Logística & Tecnologia
                   </p>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </>

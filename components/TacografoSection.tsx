@@ -60,14 +60,14 @@ export const TacografoSection: React.FC = () => {
               />
               
               {/* Floating Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-brand-card/90 backdrop-blur-md p-4 rounded-xl border border-white/10 z-20">
+              <div className="absolute bottom-6 left-6 right-6 bg-brand-card/90 backdrop-blur-md p-4 rounded-xl border border-white/10 z-20 transition-all duration-1000 shadow-[0_0_0_rgba(0,0,0,0)] border-transparent group-hover:border-green-500/30 group-hover:shadow-[0_0_30px_rgba(34,197,94,0.2)]">
                 <div className="flex items-center gap-4">
-                  <div className="bg-green-500/20 p-3 rounded-full text-green-500">
+                  <div className={`bg-green-500/20 p-3 rounded-full text-green-500 ${isVisible ? 'animate-pulse' : ''}`}>
                     <Award className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-white">Credenciado INMETRO</h4>
-                    <p className="text-xs text-gray-400">Posto Autorizado VDO</p>
+                    <h4 className="font-bold text-white">Certificado INMETRO</h4>
+                    <p className="text-xs text-gray-400">Posto autorizado com selo de qualidade VDO</p>
                   </div>
                 </div>
               </div>
@@ -80,9 +80,9 @@ export const TacografoSection: React.FC = () => {
           {/* Content Side */}
           <div className={`w-full lg:w-1/2 ${baseTransition} ${textAnimation} delay-300`}>
             <h2 className="text-brand-orange font-bold tracking-wider uppercase text-sm mb-2">Oficina Especializada</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Tacógrafos Mato Grosso
-            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Tacógrafos Mato Grosso - Posto Credenciado INMETRO
+            </h2>
             <p className="text-gray-400 mb-8 leading-relaxed text-lg">
               Evite multas e mantenha sua frota regularizada. Nossa oficina em Sinop oferece serviço ágil para que seu caminhão não fique parado. Realizamos selagem, ensaio e manutenção completa.
             </p>
@@ -102,7 +102,7 @@ export const TacografoSection: React.FC = () => {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="https://wa.me/5566999999999?text=Olá, preciso agendar um serviço de tacógrafo." target="_blank">
+              <Button href="https://wa.me/5566992302207?text=Olá, preciso agendar um serviço de tacógrafo." target="_blank">
                 Agendar Serviço
               </Button>
               <div className="flex items-center gap-2 text-gray-400 px-4">

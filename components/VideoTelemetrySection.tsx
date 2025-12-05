@@ -25,7 +25,7 @@ export const VideoTelemetrySection: React.FC = () => {
     `transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${delay}`;
 
   return (
-    <section ref={sectionRef} className="py-24 bg-brand-black relative overflow-hidden">
+    <section ref={sectionRef} id="videotelemetria" className="py-24 bg-brand-black relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-orange/5 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -50,7 +50,7 @@ export const VideoTelemetrySection: React.FC = () => {
           <div className={`md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden border border-white/10 group ${transitionClass('delay-300')}`}>
             <img 
               src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop" 
-              alt="Motorista sendo monitorado" 
+              alt="Motorista sendo monitorado com tecnologia de fadiga" 
               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>

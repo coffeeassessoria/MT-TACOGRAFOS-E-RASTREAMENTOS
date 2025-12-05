@@ -54,7 +54,7 @@ export const RastreamentoSection: React.FC = () => {
                
                <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
-                alt="Dashboard de Rastreamento"
+                alt="Sistema de Rastreamento Veicular e Gestão de Frotas"
                 className="relative z-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 transform hover:-translate-y-2 transition-transform duration-500"
                />
                
@@ -71,9 +71,9 @@ export const RastreamentoSection: React.FC = () => {
           {/* Content Side */}
           <div className={`w-full lg:w-1/2 ${baseTransition} ${contentAnimation}`}>
              <h2 className="text-brand-orange font-bold tracking-wider uppercase text-sm mb-2">Tecnologia Avançada</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              MT Rastreamentos
-            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              MT Rastreamentos - Gestão de Frotas em Sinop
+            </h2>
             <p className="text-gray-400 mb-8 leading-relaxed text-lg">
               Tenha o controle total da sua frota na palma da mão. Nosso sistema oferece telemetria avançada para reduzir custos operacionais, evitar desvios de rota e garantir a segurança da carga.
             </p>
@@ -101,7 +101,7 @@ export const RastreamentoSection: React.FC = () => {
               </div>
             </div>
 
-            <Button href="https://wa.me/5566999999999?text=Quero conhecer o sistema de rastreamento." target="_blank">
+            <Button href="https://wa.me/5566992302207?text=Quero conhecer o sistema de rastreamento." target="_blank">
               Solicitar Demonstração
             </Button>
           </div>
