@@ -11,6 +11,7 @@ import { PricingSection } from './components/PricingSection';
 import { LeadFormSection } from './components/LeadFormSection';
 import { Gallery } from './components/Gallery';
 import { AboutSection } from './components/AboutSection';
+import { LocationContactSection } from './components/LocationContactSection';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         <LeadFormSection />
         <Gallery />
         <AboutSection />
+        <LocationContactSection />
       </main>
       <Footer onOpenPolicy={() => setIsPolicyOpen(true)} />
       <WhatsAppButton />

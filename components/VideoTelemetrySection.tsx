@@ -50,7 +50,8 @@ export const VideoTelemetrySection: React.FC = () => {
           <div className={`md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden border border-white/10 group ${transitionClass('delay-300')}`}>
             <img 
               src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop" 
-              alt="Motorista sendo monitorado com tecnologia de fadiga" 
+              alt="Motorista de caminhão sendo monitorado por câmera de fadiga e videotelemetria com IA" 
+              loading="lazy"
               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>

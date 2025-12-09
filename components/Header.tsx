@@ -3,13 +3,14 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './Button';
 import { NavItem } from '../types';
+import { Logo } from './Logo';
 
 const navItems: NavItem[] = [
   { label: 'Início', href: '#home' },
   { label: 'Tacógrafos', href: '#tacografos' },
   { label: 'Rastreamento', href: '#rastreamento' },
-  { label: 'Videotelemetria', href: '#videotelemetria' },
   { label: 'Telemetria', href: '#telemetria' },
+  { label: 'Localização', href: '#localizacao' },
   { label: 'Contato', href: '#contato' },
 ];
 
@@ -25,7 +26,6 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -77,16 +77,10 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          {/* Logo Area */}
           <a href="#home" className="flex items-center gap-3 group relative z-50">
-            <img 
-              src="/logo.png" 
-              alt="Logo MT Rastreamentos" 
-              className="h-14 w-auto object-contain mix-blend-screen group-hover:scale-105 transition-transform duration-300" 
-            />
+            <Logo className="h-14 w-auto object-contain text-white group-hover:scale-105 transition-transform duration-300" />
           </a>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a 
@@ -97,12 +91,11 @@ export const Header: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <Button href="#contato" variant="primary" className="px-5 py-2 text-sm">
+            <Button href="https://wa.me/5566992302207?text=Olá, preciso falar com um especialista." target="_blank" variant="primary" className="px-5 py-2 text-sm">
               Falar com Especialista
             </Button>
           </nav>
 
-          {/* Mobile Menu Toggle */}
           <button 
             className="md:hidden text-brand-text hover:text-brand-orange transition-colors relative z-50"
             onClick={() => setIsOpen(true)}
@@ -113,11 +106,9 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Drawer System with Framer Motion */}
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Backdrop Overlay */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -127,7 +118,6 @@ export const Header: React.FC = () => {
               onClick={() => setIsOpen(false)}
             />
 
-            {/* Sliding Drawer */}
             <motion.div 
               initial="closed"
               animate="open"
@@ -136,7 +126,6 @@ export const Header: React.FC = () => {
               className="fixed top-0 right-0 h-full w-[85%] max-w-xs bg-brand-card border-l border-white/10 shadow-2xl z-[70] md:hidden flex flex-col"
             >
               <div className="flex flex-col h-full p-6">
-                {/* Drawer Header */}
                 <div className="flex items-center justify-between mb-8">
                   <span className="text-xl font-bold text-white">Menu</span>
                   <button 
@@ -148,7 +137,6 @@ export const Header: React.FC = () => {
                   </button>
                 </div>
 
-                {/* Links */}
                 <div className="flex flex-col gap-2">
                   {navItems.map((item) => (
                     <motion.a 
@@ -163,12 +151,11 @@ export const Header: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Drawer Footer */}
                 <motion.div 
                   variants={itemVariants}
                   className="mt-auto pt-6 border-t border-white/10"
                 >
-                  <Button href="#contato" onClick={() => setIsOpen(false)} className="w-full justify-center">
+                  <Button href="https://wa.me/5566992302207?text=Olá, preciso falar com um especialista." target="_blank" onClick={() => setIsOpen(false)} className="w-full justify-center">
                     Falar com Especialista
                   </Button>
                   <p className="text-center text-xs text-gray-500 mt-4">

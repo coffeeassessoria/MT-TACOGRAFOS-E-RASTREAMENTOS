@@ -54,7 +54,8 @@ export const RastreamentoSection: React.FC = () => {
                
                <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
-                alt="Sistema de Rastreamento Veicular e Gestão de Frotas"
+                alt="Interface do sistema MT Rastreamentos em tela de celular para gestão de frotas"
+                loading="lazy"
                 className="relative z-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 transform hover:-translate-y-2 transition-transform duration-500"
                />
                

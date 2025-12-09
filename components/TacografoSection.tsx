@@ -55,7 +55,8 @@ export const TacografoSection: React.FC = () => {
               <div className="absolute inset-0 bg-brand-orange/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
               <img 
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1000&auto=format&fit=crop" 
-                alt="Técnico realizando instalação de tacógrafo" 
+                alt="Instalação de tacógrafo em caminhão e manutenção VDO em Sinop" 
+                loading="lazy"
                 className="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
               

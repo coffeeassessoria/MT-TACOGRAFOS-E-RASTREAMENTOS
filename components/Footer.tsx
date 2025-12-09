@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Shield } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface FooterProps {
   onOpenPolicy?: () => void;
@@ -14,11 +15,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
           {/* Contact Info */}
           <div>
             <div className="mb-6">
-              <img 
-                src="/logo.png" 
-                alt="Logo MT Rastreamentos" 
-                className="h-24 w-auto object-contain mix-blend-screen opacity-90" 
-              />
+              <Logo className="h-16 w-auto object-contain opacity-90" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-6">Entre em Contato</h3>
             <ul className="space-y-4">
