@@ -50,14 +50,17 @@ export const LocationContactSection: React.FC = () => {
                   <Clock className="w-6 h-6 text-brand-orange" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-lg">Horário</h4>
-                  <p className="text-gray-400">Seg a Sex: 07:30 - 17:00</p>
+                  <h4 className="text-white font-bold text-lg">Horário de Funcionamento</h4>
+                  <ul className="text-gray-400 text-sm mt-1 space-y-1">
+                    <li className="flex justify-between gap-8"><span>Segunda - Sexta:</span> <span>07:30 – 17:00</span></li>
+                    <li className="flex justify-between gap-8"><span>Sábado:</span> <span>08:00 – 11:15</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="https://www.google.com/maps/search/?api=1&query=R.+Colonizador+%C3%8Anio+Pipino+-+Jardim+Ouro,+Sinop+-+MT,+78550-628" target="_blank" className="w-full sm:w-auto">
+              <Button href="https://www.google.com/maps/search/?api=1&query=Tac%C3%B3grafos+Mato+Grosso+Sinop" target="_blank" className="w-full sm:w-auto">
                 <Navigation className="w-5 h-5 mr-2" />
                 Traçar Rota no GPS
               </Button>
@@ -72,7 +75,7 @@ export const LocationContactSection: React.FC = () => {
           <div className="w-full lg:w-1/2 h-[400px] lg:h-[600px] relative">
             <div className="absolute inset-0 bg-brand-orange/20 mix-blend-overlay z-10 pointer-events-none"></div>
             <iframe 
-              src="https://maps.google.com/maps?q=R.+Colonizador+%C3%8Anio+Pipino+-+Jardim+Ouro,+Sinop+-+MT,+78550-628&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Tac%C3%B3grafos+Mato+Grosso+Sinop&t=&z=16&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{border:0}} 

@@ -10,7 +10,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
   return (
     <footer id="contato" className="bg-brand-black pt-16 pb-8 border-t border-white/10">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
           
           {/* Contact Info */}
           <div>
@@ -58,7 +58,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="md:pl-12">
             <h3 className="text-xl font-bold text-white mb-6">Acesso Rápido</h3>
             <ul className="space-y-2 mb-8">
               {[
@@ -89,21 +89,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
                 </button>
               </li>
             </ul>
-          </div>
-
-          {/* Map */}
-          <div className="w-full h-96 bg-brand-card rounded-xl overflow-hidden border border-brand-orange/30 shadow-lg shadow-brand-orange/10">
-            <iframe 
-              src="https://maps.google.com/maps?q=R.+Colonizador+%C3%8Anio+Pipino+-+Jardim+Ouro,+Sinop+-+MT,+78550-628&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="100%" 
-              style={{border:0}} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full grayscale-0 invert-0"
-              title="Localização Tacógrafos Mato Grosso"
-            ></iframe>
           </div>
         </div>
 
