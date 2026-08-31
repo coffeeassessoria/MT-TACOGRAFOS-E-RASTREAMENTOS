@@ -15,22 +15,22 @@ export const Gallery: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-96">
            {/* Main Large Image */}
            <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl">
-             <img 
-               src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?q=80&w=1000&auto=format&fit=crop" 
-               alt="Caminhão de frota monitorada rodando em estradas de Mato Grosso" 
+             <img
+               src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?q=80&w=1000&auto=format&fit=crop"
+               alt="Caminhão em rodovia de Mato Grosso com tacógrafo regularizado"
                loading="lazy"
                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
              />
              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 flex items-end p-6">
-               <p className="text-white font-medium">Frota Monitorada</p>
+               <p className="text-white font-medium">Frota Regularizada</p>
              </div>
            </div>
-           
+
            {/* Secondary Images */}
            <div className="col-span-1 row-span-1 relative group overflow-hidden rounded-2xl">
-              <img 
-               src="https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=500&auto=format&fit=crop" 
-               alt="Equipe técnica especializada em instalação de rastreadores e tacógrafos" 
+              <img
+               src="https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=500&auto=format&fit=crop"
+               alt="Equipe técnica especializada em aferição e instalação de tacógrafos"
                loading="lazy"
                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
              />

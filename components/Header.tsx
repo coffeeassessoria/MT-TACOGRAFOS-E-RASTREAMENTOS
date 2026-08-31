@@ -7,9 +7,9 @@ import { Logo } from './Logo';
 
 const navItems: NavItem[] = [
   { label: 'Início', href: '#home' },
-  { label: 'Tacógrafos', href: '#tacografos' },
-  { label: 'Rastreamento', href: '#rastreamento' },
-  { label: 'Telemetria', href: '#telemetria' },
+  { label: 'Serviços', href: '#tacografos' },
+  { label: 'Como Funciona', href: '#como-funciona' },
+  { label: 'Preços', href: '#precos' },
   { label: 'Localização', href: '#localizacao' },
   { label: 'Contato', href: '#contato' },
 ];
@@ -159,7 +159,7 @@ export const Header: React.FC = () => {
                     Falar com Especialista
                   </Button>
                   <p className="text-center text-xs text-gray-500 mt-4">
-                    Grupo MT - Logística & Tecnologia
+                    Tacógrafos Mato Grosso - Sinop, MT
                   </p>
                 </motion.div>
               </div>

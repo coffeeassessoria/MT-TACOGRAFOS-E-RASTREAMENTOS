@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Radio, Zap } from 'lucide-react';
+import { Users, Award, Zap } from 'lucide-react';
 
 export const Features: React.FC = () => {
   const features = [
@@ -9,14 +9,14 @@ export const Features: React.FC = () => {
       description: "Estamos em Sinop. Você fala com gente de verdade, pronta para resolver seu problema na hora."
     },
     {
-      icon: <Radio className="w-8 h-8" />,
-      title: "Tecnologia 4G/5G",
-      description: "Equipamentos homologados pela ANATEL e sistemas de última geração para máxima cobertura."
+      icon: <Award className="w-8 h-8" />,
+      title: "Certificação INMETRO Garantida",
+      description: "Posto credenciado, com equipamentos e lacres originais VDO. Sua frota sai daqui em conformidade."
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Agilidade Integrada",
-      description: "Oficina e instalação no mesmo lugar. Resolva tacógrafo e rastreador em uma única parada."
+      title: "Agilidade no Atendimento",
+      description: "Processo enxuto pensado pra caminhão parado custar o menos possível. Sem fila desnecessária."
     }
   ];
 
@@ -24,7 +24,7 @@ export const Features: React.FC = () => {
     <section id="diferenciais" className="py-20 bg-brand-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Por que escolher o <span className="text-brand-orange">Grupo MT</span>?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Por que escolher a <span className="text-brand-orange">Tacógrafos Mato Grosso</span>?</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Unimos a tradição da mecânica com a inovação da tecnologia para oferecer a melhor experiência.
           </p>

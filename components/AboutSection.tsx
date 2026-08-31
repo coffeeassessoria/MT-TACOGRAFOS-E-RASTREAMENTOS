@@ -42,18 +42,18 @@ export const AboutSection: React.FC = () => {
                 <span className="font-bold uppercase tracking-widest text-sm">Nossa Trajetória</span>
               </div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Unindo Forças para <br />
-                <span className="text-brand-orange">Mover o Mato Grosso</span>
+                Tradição e Precisão <br />
+                <span className="text-brand-orange">nas Estradas do Mato Grosso</span>
               </h2>
               <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                 <p>
-                  O <strong>Grupo MT</strong> nasceu de uma necessidade real nas estradas do Centro-Oeste. De um lado, a tradição e a precisão técnica da <em>Tacógrafos Mato Grosso</em>, garantindo que veículos pesados estivessem sempre dentro da lei.
+                  A <strong>Tacógrafos Mato Grosso</strong> nasceu de uma necessidade real nas estradas do Centro-Oeste: garantir que veículos pesados estivessem sempre dentro da lei, sem que isso significasse dias parados no pátio.
                 </p>
                 <p>
-                  Do outro, a inovação da <em>MT Rastreamentos</em>, trazendo inteligência de dados e segurança patrimonial. Percebemos que nossos clientes não precisavam de dois fornecedores, mas sim de uma <strong>solução única</strong>.
+                  Desde então, nos especializamos em um único trabalho e o fazemos bem feito: aferição, selagem e manutenção de tacógrafos, com a técnica de quem entende do assunto e a agilidade de quem sabe o custo de um caminhão parado.
                 </p>
                 <p className="text-white font-medium border-l-4 border-brand-orange pl-4">
-                  Hoje, somos mais que uma oficina ou uma empresa de software. Somos o parceiro estratégico que garante que sua frota saia do pátio legalizada, segura e gerando lucro.
+                  Somos o posto autorizado INMETRO que garante que sua frota saia do pátio legalizada, segura e pronta pra rodar.
                 </p>
               </div>
             </div>
@@ -68,7 +68,7 @@ export const AboutSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Nossa Visão</h3>
               <p className="text-gray-400">
-                Ser a referência absoluta em gestão de frotas no Mato Grosso, reconhecida por transformar dados complexos e burocracia em tranquilidade para o transportador.
+                Ser a referência absoluta em aferição e manutenção de tacógrafos no Mato Grosso, reconhecida por transformar burocracia em tranquilidade para o transportador.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export const AboutSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Nossa Missão</h3>
               <p className="text-gray-400">
-                Integrar serviços físicos e tecnologia digital para reduzir custos operacionais, salvar vidas nas estradas e garantir a conformidade legal de cada veículo que atendemos.
+                Oferecer um serviço técnico ágil e confiável, que reduza custos com multas e paradas, e garanta a conformidade legal de cada veículo que atendemos.
               </p>
             </div>
 

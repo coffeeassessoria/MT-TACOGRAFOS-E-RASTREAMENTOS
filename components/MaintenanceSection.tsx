@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Wrench, BellRing, CalendarCheck, ArrowRight } from 'lucide-react';
+import { MessageCircle, ClipboardCheck, FileCheck2, ArrowRight } from 'lucide-react';
 
 export const MaintenanceSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,32 +22,32 @@ export const MaintenanceSection: React.FC = () => {
 
   const steps = [
     {
-      icon: <CalendarCheck className="w-10 h-10" />,
-      title: "1. Monitoramento",
-      desc: "O sistema lê o KM rodado e as horas de motor via telemetria."
+      icon: <MessageCircle className="w-10 h-10" />,
+      title: "1. Agendamento",
+      desc: "Você fala com a gente pelo WhatsApp e marca um horário informando placa e modelo do veículo."
     },
     {
-      icon: <BellRing className="w-10 h-10" />,
-      title: "2. Alerta Automático",
-      desc: "Gestor recebe aviso de que a revisão ou aferição está próxima."
+      icon: <ClipboardCheck className="w-10 h-10" />,
+      title: "2. Ensaio e Selagem",
+      desc: "Fazemos o ensaio metrológico e a selagem com lacre numerado, no padrão exigido pelo INMETRO."
     },
     {
-      icon: <Wrench className="w-10 h-10" />,
-      title: "3. Execução Integrada",
-      desc: "Agendamento direto na oficina Tacógrafos MT em Sinop."
+      icon: <FileCheck2 className="w-10 h-10" />,
+      title: "3. Certificado",
+      desc: "Você recebe o certificado de aferição e retoma a viagem com o caminhão regularizado."
     }
   ];
 
   return (
-    <section ref={sectionRef} id="manutencao" className="py-20 bg-brand-black border-y border-white/5 relative">
+    <section ref={sectionRef} id="como-funciona" className="py-20 bg-brand-black border-y border-white/5 relative">
       <div className="container mx-auto px-4 text-center">
-        
+
         <div className={`max-w-3xl mx-auto mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Manutenção Preventiva Automatizada
+            Como Funciona a Aferição
           </h2>
           <p className="text-gray-400 text-lg">
-            A força do Grupo MT: Software e Oficina trabalhando juntos. Sua frota não para por esquecimento e você evita custos corretivos.
+            Um processo simples, pensado pra sua frota ficar parada o mínimo de tempo possível.
           </p>
         </div>
 

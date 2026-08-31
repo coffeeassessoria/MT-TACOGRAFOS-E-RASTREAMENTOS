@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { ArrowRight, CheckCircle2, Truck, Car, MessageSquare, Send } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Gauge, Wrench, MessageSquare, Send } from 'lucide-react';
 import { Button } from './Button';
 
 type Step = 'type' | 'details' | 'contact';
 
 export const LeadFormSection: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<Step>('type');
-  const [usageType, setUsageType] = useState<'business' | 'personal' | null>(null);
+  const [usageType, setUsageType] = useState<'aferição' | 'instalação' | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -68,8 +68,8 @@ export const LeadFormSection: React.FC = () => {
             <div className="bg-brand-card p-6 md:p-8 md:w-1/3 border-b md:border-b-0 md:border-r border-white/10">
               <div className="space-y-6">
                 {[
-                  { id: 'type', label: '1. Finalidade', icon: <Truck className="w-5 h-5" /> },
-                  { id: 'details', label: '2. Detalhes', icon: <Car className="w-5 h-5" /> },
+                  { id: 'type', label: '1. Finalidade', icon: <Gauge className="w-5 h-5" /> },
+                  { id: 'details', label: '2. Detalhes', icon: <Wrench className="w-5 h-5" /> },
                   { id: 'contact', label: '3. Contato', icon: <MessageSquare className="w-5 h-5" /> }
                 ].map((step, idx) => (
                   <div key={step.id} className={`flex items-center gap-3 ${currentStep === step.id ? 'text-brand-orange' : 'text-gray-600'}`}>
@@ -87,28 +87,28 @@ export const LeadFormSection: React.FC = () => {
               
               {currentStep === 'type' && (
                 <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-300">
-                  <h3 className="text-xl font-bold text-white">Para que você precisa do rastreador?</h3>
+                  <h3 className="text-xl font-bold text-white">Qual o motivo do seu contato?</h3>
                   <div className="grid grid-cols-1 gap-4">
-                    <button 
-                      onClick={() => setUsageType('business')}
-                      className={`p-4 rounded-xl border text-left transition-all hover:bg-white/5 ${usageType === 'business' ? 'border-brand-orange bg-brand-orange/5' : 'border-white/10'}`}
+                    <button
+                      onClick={() => setUsageType('aferição')}
+                      className={`p-4 rounded-xl border text-left transition-all hover:bg-white/5 ${usageType === 'aferição' ? 'border-brand-orange bg-brand-orange/5' : 'border-white/10'}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="font-bold text-white">Uso Profissional / Frota</span>
-                        <Truck className="text-brand-orange" />
+                        <span className="font-bold text-white">Aferição / Selagem Obrigatória</span>
+                        <Gauge className="text-brand-orange" />
                       </div>
-                      <p className="text-sm text-gray-500 mt-1">Caminhões, Vans, Máquinas Agrícolas.</p>
+                      <p className="text-sm text-gray-500 mt-1">Lacre vencido, prazo do INMETRO ou fiscalização.</p>
                     </button>
 
-                    <button 
-                      onClick={() => setUsageType('personal')}
-                      className={`p-4 rounded-xl border text-left transition-all hover:bg-white/5 ${usageType === 'personal' ? 'border-brand-orange bg-brand-orange/5' : 'border-white/10'}`}
+                    <button
+                      onClick={() => setUsageType('instalação')}
+                      className={`p-4 rounded-xl border text-left transition-all hover:bg-white/5 ${usageType === 'instalação' ? 'border-brand-orange bg-brand-orange/5' : 'border-white/10'}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="font-bold text-white">Uso Pessoal</span>
-                        <Car className="text-brand-orange" />
+                        <span className="font-bold text-white">Instalação ou Manutenção</span>
+                        <Wrench className="text-brand-orange" />
                       </div>
-                      <p className="text-sm text-gray-500 mt-1">Carro de passeio, Moto, Caminhonete.</p>
+                      <p className="text-sm text-gray-500 mt-1">Tacógrafo novo, reparo ou troca de disco.</p>
                     </button>
                   </div>
                   <div className="flex justify-end pt-4">
@@ -122,20 +122,20 @@ export const LeadFormSection: React.FC = () => {
               {currentStep === 'details' && (
                 <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-300">
                   <h3 className="text-xl font-bold text-white">
-                    {usageType === 'business' ? 'Qual o tamanho da sua frota?' : 'Quantos veículos deseja rastrear?'}
+                    Quantos veículos você precisa regularizar?
                   </h3>
                   <div className="space-y-4">
                     <select className="w-full bg-brand-card border border-white/10 rounded-lg p-3 text-white focus:border-brand-orange focus:ring-1 focus:ring-brand-orange outline-none">
-                      <option>1 a 4 veículos</option>
-                      <option>5 a 20 veículos</option>
-                      <option>Mais de 20 veículos</option>
+                      <option>1 veículo</option>
+                      <option>2 a 5 veículos</option>
+                      <option>Mais de 5 veículos (frota)</option>
                     </select>
-                    
+
                     <div className="p-4 bg-brand-orange/10 rounded-lg border border-brand-orange/20">
                       <p className="text-sm text-brand-orange">
-                        <span className="font-bold">Dica:</span> {usageType === 'business' 
-                          ? "Para frotas acima de 5 veículos, temos planos com telemetria inclusa." 
-                          : "O plano Light é perfeito para proteção contra roubo e furto."}
+                        <span className="font-bold">Dica:</span> {usageType === 'aferição'
+                          ? "Traga o veículo com o lacre atual visível pra agilizarmos o ensaio na chegada."
+                          : "Frotas acima de 5 veículos podem agendar atendimento em lote no mesmo dia."}
                       </p>
                     </div>
                   </div>

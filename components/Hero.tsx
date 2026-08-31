@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Wrench, Smartphone } from 'lucide-react';
+import { ArrowRight, CalendarCheck } from 'lucide-react';
 import { Button } from './Button';
 
 export const Hero: React.FC = () => {
@@ -13,27 +13,26 @@ export const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 mb-6 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
-            <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">Atendendo todo Mato Grosso</span>
+            <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">Posto Autorizado INMETRO em Sinop - MT</span>
           </div>
-          
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-            Solução Completa para <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-orange-400">Sua Frota</span>
+            Tacógrafo Regularizado, <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-orange-400">Sem Multa e Sem Atraso</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-            Do ajuste preciso do tacógrafo à telemetria avançada. Conformidade, segurança e economia reunidas em Sinop.
+            Aferição, selagem e manutenção de tacógrafos digitais e analógicos em Sinop. Atendimento rápido para sua frota não ficar parada.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-lg mx-auto">
-            <Button href="#tacografos" variant="outline" className="w-full sm:w-1/2 group">
-              <Wrench className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-              Preciso de Tacógrafo
-            </Button>
-            <Button href="#rastreamento" variant="primary" className="w-full sm:w-1/2 group">
-              <Smartphone className="w-5 h-5 mr-2" />
-              Quero Rastreamento
+            <Button href="https://wa.me/5566992302207?text=Olá, preciso agendar a aferição do meu tacógrafo." target="_blank" variant="primary" className="w-full sm:w-auto group">
+              <CalendarCheck className="w-5 h-5 mr-2" />
+              Agendar Aferição
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button href="#precos" variant="outline" className="w-full sm:w-auto">
+              Ver Tabela de Preços
             </Button>
           </div>
         </div>

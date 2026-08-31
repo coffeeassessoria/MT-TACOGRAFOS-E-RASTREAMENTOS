@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { TacografoSection } from './components/TacografoSection';
-import { RastreamentoSection } from './components/RastreamentoSection';
-import { VideoTelemetrySection } from './components/VideoTelemetrySection';
-import { AdvancedTelemetrySection } from './components/AdvancedTelemetrySection';
 import { MaintenanceSection } from './components/MaintenanceSection';
 import { Features } from './components/Features';
 import { PricingSection } from './components/PricingSection';
@@ -25,9 +22,6 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <TacografoSection />
-        <RastreamentoSection />
-        <VideoTelemetrySection />
-        <AdvancedTelemetrySection />
         <MaintenanceSection />
         <Features />
         <PricingSection />

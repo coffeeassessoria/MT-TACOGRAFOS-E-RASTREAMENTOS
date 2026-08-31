@@ -52,7 +52,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
                 1. Introdução
               </h3>
               <p>
-                O <strong>Grupo MT</strong> (Tacógrafos Mato Grosso e MT Rastreamentos) valoriza a privacidade de seus usuários e clientes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos seus dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD)</strong>.
+                A <strong>Tacógrafos Mato Grosso</strong> valoriza a privacidade de seus usuários e clientes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos seus dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD)</strong>.
               </p>
             </section>
 
@@ -111,7 +111,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             <section>
               <h3 className="text-lg font-bold text-white mb-3">6. Contato do Encarregado (DPO)</h3>
               <p>
-                Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato através do e-mail: <a href="mailto:contato@grupomt.com.br" className="text-brand-orange hover:underline">contato@grupomt.com.br</a>.
+                Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato através do e-mail: <a href="mailto:contato@tacografosmatogrosso.com.br" className="text-brand-orange hover:underline">contato@tacografosmatogrosso.com.br</a>.
               </p>
             </section>
           </div>

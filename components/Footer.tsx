@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
               </li>
               <li className="flex items-center gap-3 text-gray-400 hover:text-brand-orange transition-colors">
                 <Mail className="w-5 h-5 shrink-0" />
-                <span>contato@grupomt.com.br</span>
+                <span>contato@tacografosmatogrosso.com.br</span>
               </li>
             </ul>
             
@@ -63,10 +63,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
             <ul className="space-y-2 mb-8">
               {[
                 { label: 'Início', href: '#home' },
-                { label: 'Tacógrafos', href: '#tacografos' },
-                { label: 'Rastreamento', href: '#rastreamento' },
-                { label: 'Videotelemetria', href: '#videotelemetria' },
-                { label: 'Telemetria', href: '#telemetria' },
+                { label: 'Serviços', href: '#tacografos' },
+                { label: 'Como Funciona', href: '#como-funciona' },
+                { label: 'Preços', href: '#precos' },
                 { label: 'Diferenciais', href: '#diferenciais' }
               ].map((item) => (
                 <li key={item.label}>
@@ -93,7 +92,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
         </div>
 
         <div className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Grupo MT. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Tacógrafos Mato Grosso. Todos os direitos reservados.</p>
           <p className="flex items-center gap-1 text-xs">
             <Shield className="w-3 h-3" />
             Em conformidade com a LGPD

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tacografosmatogrosso.com.br/sitemap.xml

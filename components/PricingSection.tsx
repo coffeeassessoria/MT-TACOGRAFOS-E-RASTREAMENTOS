@@ -44,36 +44,7 @@ const tacografoData: PriceItem[] = [
   }
 ];
 
-const rastreamentoData: PriceItem[] = [
-  {
-    service: "Plano Rastreador Light",
-    description: "Localização 24h + App Mobile + Bloqueio.",
-    price: "R$ 59,90 /mês",
-    obs: "Instalação: R$ 100,00 (Adesão)."
-  },
-  {
-    service: "Plano Gestão Pro",
-    description: "Relatórios de rota, velocidade e cercas virtuais.",
-    price: "R$ 79,90 /mês",
-    obs: "Instalação Grátis (Fidelidade 12 meses).",
-    highlight: true
-  },
-  {
-    service: "Plano Telemetria CAN",
-    description: "Leitura de combustível e RPM (Computador de bordo).",
-    price: "R$ 119,90 /mês",
-    obs: "Requer equipamento avançado."
-  },
-  {
-    service: "Videotelemetria IA",
-    description: "Câmera com sensor de fadiga e gravação.",
-    price: "Sob Consulta",
-    obs: "Projeto personalizado."
-  }
-];
-
 export const PricingSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'tacografo' | 'rastreamento'>('tacografo');
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -92,12 +63,12 @@ export const PricingSection: React.FC = () => {
     return () => { if (sectionRef.current) observer.unobserve(sectionRef.current); };
   }, []);
 
-  const currentData = activeTab === 'tacografo' ? tacografoData : rastreamentoData;
+  const currentData = tacografoData;
 
   return (
-    <section ref={sectionRef} className="py-20 bg-brand-black relative">
+    <section ref={sectionRef} id="precos" className="py-20 bg-brand-black relative">
       <div className="container mx-auto px-4">
-        
+
         <div className={`text-center mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-flex items-center gap-2 text-brand-orange mb-2">
             <Tag className="w-5 h-5" />
@@ -107,34 +78,8 @@ export const PricingSection: React.FC = () => {
             Tabela de Preços Estimados
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Sem surpresas na hora de pagar. Confira nossos valores de referência para serviços de oficina e planos de monitoramento.
+            Sem surpresas na hora de pagar. Confira nossos valores de referência para os serviços da oficina.
           </p>
-        </div>
-
-        {/* Tabs */}
-        <div className="flex justify-center mb-10">
-          <div className="bg-white/5 p-1 rounded-xl inline-flex border border-white/10">
-            <button
-              onClick={() => setActiveTab('tacografo')}
-              className={`px-6 py-3 rounded-lg text-sm font-bold transition-all ${
-                activeTab === 'tacografo' 
-                  ? 'bg-brand-orange text-white shadow-lg' 
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              Oficina (Tacógrafos)
-            </button>
-            <button
-              onClick={() => setActiveTab('rastreamento')}
-              className={`px-6 py-3 rounded-lg text-sm font-bold transition-all ${
-                activeTab === 'rastreamento' 
-                  ? 'bg-brand-orange text-white shadow-lg' 
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              Rastreamento (Mensal)
-            </button>
-          </div>
         </div>
 
         {/* Content Container */}
@@ -221,9 +166,9 @@ export const PricingSection: React.FC = () => {
           {/* Disclaimer */}
           <div className="mt-8 text-center">
             <p className="text-xs text-gray-600 max-w-3xl mx-auto mb-6">
-              * Os valores podem sofrer alterações sem aviso prévio. Para serviços de oficina, o valor final pode depender da análise técnica do veículo. Planos de rastreamento sujeitos a análise de crédito.
+              * Os valores podem sofrer alterações sem aviso prévio. O valor final pode depender da análise técnica do veículo.
             </p>
-            <Button variant="primary" href="mailto:contato@grupomt.com.br" target="_blank">
+            <Button variant="primary" href="mailto:contato@tacografosmatogrosso.com.br" target="_blank">
               <Mail className="w-5 h-5 mr-2" />
               Solicitar Orçamento Oficial
             </Button>
