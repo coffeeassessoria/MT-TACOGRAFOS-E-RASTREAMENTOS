@@ -12,16 +12,16 @@ export const LocationContactSection: React.FC = () => {
           <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 mb-6">
               <MapPin className="w-4 h-4 text-brand-orange" />
-              <span className="text-xs font-bold text-brand-orange uppercase tracking-wider">Sinop - MT</span>
+              <span className="text-xs font-bold text-brand-orange uppercase tracking-wider">Sinop - MT · Rota BR-163</span>
             </div>
-            
+
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Visite nossa <br />
               <span className="text-brand-orange">Sede em Sinop</span>
             </h2>
-            
+
             <p className="text-gray-400 text-lg mb-8">
-              Venha tomar um café conosco e conhecer nossa estrutura. Oficina especializada e equipe de suporte técnico pronta para atender você.
+              Direto na rota da BR-163, a caminho de Santarém. Oficina especializada e equipe técnica pronta pra não deixar sua frota parada.
             </p>
 
             <div className="space-y-6 mb-10">

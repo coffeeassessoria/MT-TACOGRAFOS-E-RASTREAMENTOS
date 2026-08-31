@@ -85,14 +85,14 @@ export const TacografoSection: React.FC = () => {
               Tacógrafos Mato Grosso - Posto Credenciado INMETRO
             </h2>
             <p className="text-gray-400 mb-8 leading-relaxed text-lg">
-              Evite multas e mantenha sua frota regularizada. Nossa oficina em Sinop oferece serviço ágil para que seu caminhão não fique parado. Realizamos selagem, ensaio e manutenção completa.
+              Certificado vencido tira seu caminhão da pista até regularizar. Nossa oficina fica direto na rota da BR-163 em Sinop, a caminho de Santarém, com aferição, selagem e manutenção completas pra sua frota seguir viagem.
             </p>
 
             <ul className="space-y-4 mb-10">
               {[
                 "Aferição e Selagem (INMETRO)",
                 "Manutenção de Tacógrafos VDO",
-                "Rapidez no atendimento para motoristas",
+                "Aferição em até 60 minutos",
                 "Equipamentos originais e garantia"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
@@ -108,7 +108,7 @@ export const TacografoSection: React.FC = () => {
               </Button>
               <div className="flex items-center gap-2 text-gray-400 px-4">
                 <Clock className="w-4 h-4" />
-                <span className="text-sm">Atendimento rápido</span>
+                <span className="text-sm">Até 60 minutos</span>
               </div>
             </div>
           </div>

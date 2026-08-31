@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CalendarCheck } from 'lucide-react';
+import { ArrowRight, CalendarCheck, Clock, MapPin } from 'lucide-react';
 import { Button } from './Button';
 
 export const Hero: React.FC = () => {
@@ -21,11 +21,11 @@ export const Hero: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-orange-400">Sem Multa e Sem Atraso</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-            Aferição, selagem e manutenção de tacógrafos digitais e analógicos em Sinop. Atendimento rápido para sua frota não ficar parada.
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed font-light">
+            Certificado vencido tira seu caminhão da pista até regularizar. A gente resolve rápido, direto na rota da BR-163 em Sinop.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-lg mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-lg mx-auto mb-8">
             <Button href="https://wa.me/5566992302207?text=Olá, preciso agendar a aferição do meu tacógrafo." target="_blank" variant="primary" className="w-full sm:w-auto group">
               <CalendarCheck className="w-5 h-5 mr-2" />
               Agendar Aferição
@@ -34,6 +34,17 @@ export const Hero: React.FC = () => {
             <Button href="#precos" variant="outline" className="w-full sm:w-auto">
               Ver Tabela de Preços
             </Button>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
+            <span className="flex items-center gap-2">
+              <Clock className="w-4 h-4 text-brand-orange" />
+              Aferição em até 60 minutos
+            </span>
+            <span className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-brand-orange" />
+              Direto na rota da BR-163
+            </span>
           </div>
         </div>
       </div>
