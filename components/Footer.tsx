@@ -93,10 +93,23 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
 
         <div className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Tacógrafos Mato Grosso. Todos os direitos reservados.</p>
-          <p className="flex items-center gap-1 text-xs">
-            <Shield className="w-3 h-3" />
-            Em conformidade com a LGPD
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+            <p className="flex items-center gap-1 text-xs">
+              <Shield className="w-3 h-3" />
+              Em conformidade com a LGPD
+            </p>
+            <p className="text-xs">
+              Desenvolvido por{' '}
+              <a
+                href="https://coffeeassessoria.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-brand-orange transition-colors font-medium"
+              >
+                Coffee Assessoria
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
