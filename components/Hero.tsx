@@ -9,13 +9,6 @@ export const Hero: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-brand-black to-transparent opacity-90"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-black to-transparent"></div>
 
-      {/* Selo de qualidade (desktop) */}
-      <img
-        src="/badges/selo-qualidade.png"
-        alt="Selo de qualidade e agilidade Tacógrafos Mato Grosso"
-        className="hidden lg:block absolute top-28 right-10 w-28 h-28 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] rotate-6 z-10"
-      />
-
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 mb-6 backdrop-blur-sm">

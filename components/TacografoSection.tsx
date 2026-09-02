@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { CheckCircle2, Clock } from 'lucide-react';
+import { CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 import { Button } from './Button';
 
 export const TacografoSection: React.FC = () => {
@@ -63,11 +63,9 @@ export const TacografoSection: React.FC = () => {
               {/* Floating Card */}
               <div className="absolute bottom-6 left-6 right-6 bg-brand-card/90 backdrop-blur-md p-4 rounded-xl border border-white/10 z-20 transition-all duration-1000 shadow-[0_0_0_rgba(0,0,0,0)] border-transparent group-hover:border-brand-orange/30 group-hover:shadow-[0_0_30px_rgba(255,102,0,0.2)]">
                 <div className="flex items-center gap-4">
-                  <img
-                    src="/badges/selo-qualidade.png"
-                    alt="Selo de qualidade e agilidade Tacógrafos Mato Grosso"
-                    className={`w-14 h-14 shrink-0 object-contain ${isVisible ? 'animate-pulse' : ''}`}
-                  />
+                  <div className={`bg-brand-orange/20 p-3 rounded-full text-brand-orange ${isVisible ? 'animate-pulse' : ''}`}>
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
                   <div>
                     <h4 className="font-bold text-white">Certificado INMETRO</h4>
                     <p className="text-xs text-gray-400">Posto autorizado com selo de qualidade VDO</p>
@@ -75,14 +73,6 @@ export const TacografoSection: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Decorative Seal (desktop) */}
-            <img
-              src="/badges/selo-qualidade.png"
-              alt=""
-              aria-hidden="true"
-              className="hidden lg:block absolute -top-8 -right-8 w-32 h-32 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] -rotate-12 z-30"
-            />
 
             {/* Decorative Element */}
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-brand-orange/20 blur-[100px] rounded-full"></div>
