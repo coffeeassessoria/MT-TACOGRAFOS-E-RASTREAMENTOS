@@ -9,7 +9,7 @@ const navItems: NavItem[] = [
   { label: 'Início', href: '#home' },
   { label: 'Serviços', href: '#tacografos' },
   { label: 'Como Funciona', href: '#como-funciona' },
-  { label: 'Preços', href: '#precos' },
+  { label: 'Orçamento', href: '#orcamento' },
   { label: 'Localização', href: '#localizacao' },
   { label: 'Contato', href: '#contato' },
 ];

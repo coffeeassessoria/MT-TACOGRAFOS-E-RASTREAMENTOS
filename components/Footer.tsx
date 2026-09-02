@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
                 { label: 'Início', href: '#home' },
                 { label: 'Serviços', href: '#tacografos' },
                 { label: 'Como Funciona', href: '#como-funciona' },
-                { label: 'Preços', href: '#precos' },
+                { label: 'Orçamento', href: '#orcamento' },
                 { label: 'Diferenciais', href: '#diferenciais' }
               ].map((item) => (
                 <li key={item.label}>

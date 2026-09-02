@@ -31,8 +31,8 @@ export const Hero: React.FC = () => {
               Agendar Aferição
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button href="#precos" variant="outline" className="w-full sm:w-auto">
-              Ver Tabela de Preços
+            <Button href="#orcamento" variant="outline" className="w-full sm:w-auto">
+              Ver Serviços e Orçamento
             </Button>
           </div>
 
