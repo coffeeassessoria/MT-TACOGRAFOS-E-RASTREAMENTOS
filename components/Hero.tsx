@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
             <span className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-brand-orange" />
-              Aferição em até 60 minutos
+              Aferição em até 40 minutos
             </span>
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-brand-orange" />

@@ -16,7 +16,7 @@ export const Features: React.FC = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Agilidade no Atendimento",
-      description: "Aferição em até 60 minutos, sem fila desnecessária. Pensado pra caminhão parado custar o menos possível."
+      description: "Aferição em até 40 minutos, sem fila desnecessária. Pensado pra caminhão parado custar o menos possível."
     }
   ];
 

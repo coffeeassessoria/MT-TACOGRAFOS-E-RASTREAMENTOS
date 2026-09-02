@@ -92,7 +92,7 @@ export const TacografoSection: React.FC = () => {
               {[
                 "Aferição e Selagem (INMETRO)",
                 "Manutenção de Tacógrafos VDO",
-                "Aferição em até 60 minutos",
+                "Aferição em até 40 minutos",
                 "Equipamentos originais e garantia"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
@@ -108,7 +108,7 @@ export const TacografoSection: React.FC = () => {
               </Button>
               <div className="flex items-center gap-2 text-gray-400 px-4">
                 <Clock className="w-4 h-4" />
-                <span className="text-sm">Até 60 minutos</span>
+                <span className="text-sm">Até 40 minutos</span>
               </div>
             </div>
           </div>
